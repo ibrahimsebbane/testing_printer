@@ -31,6 +31,7 @@ class _AlertDialogPrintersState extends State<AlertDialogPrinters> {
       // print('UI: Devices found ${devices.length}');
       setState(() {
         _devices = devices;
+        print("devices detected:" + _devices.toString());
       });
     });
   }
@@ -41,8 +42,8 @@ class _AlertDialogPrintersState extends State<AlertDialogPrinters> {
       _hasFinishedScan = false;
       _devices = [];
     });
-    printerManager.startScan(Duration(seconds: 5));
-    _timer = new Timer(Duration(seconds: 5), () {
+    printerManager.startScan(Duration(seconds: 30));
+    _timer = new Timer(Duration(seconds: 30), () {
       setState(() {
         _hasFinishedScan = true;
       });
