@@ -33,6 +33,11 @@ dependencies:
   esc_pos_printer: ^4.1.0
   esc_pos_utils: ^1.1.0
   # ping_discover_network: ^0.2.0+1
+  esc_pos_bluetooth: ^0.4.1
+  gbk_codec: ^0.4.0
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  qr_flutter: ^4.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
